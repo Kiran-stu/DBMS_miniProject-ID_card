@@ -1,0 +1,41 @@
+<html>
+   <head>
+    <title>Non Teaching staff|ID generator</title>
+   </head>
+     <body bgcolor='grey' style='background-image:url("images/background.jpg");'>
+	  <div align="center">
+       <table>
+	    <form method="post" action="non_teaching.php" enctype="multipart/form-data">
+	    <h1 style='font-size:45;'>Non teaching Staff_id card</h1>
+		<tr><td><b>Staff_id</td><td><input type="text" name='staff_id' required></td></tr>
+		<tr><td><b>Name</td><td><input type="text" name="name"></td></tr>
+		<tr><td><b>dob</td><td><input type="date" name="dob"></td></tr>
+		<tr>
+		<td><b>Department</td>
+		<td>
+		<select name="departmnet">
+		<option value="Account">Account</option>
+		<option value="Security">Security</option>
+		<option value="Cleaning">Cleaning</option>
+		<option value="Transport">Transport</option>
+		<option value="Sport">Sport</option>
+		</select>
+		</td>
+		</tr>
+		<tr><td><b>Address</td><td><input type="text" name="address"></td></tr>
+		<tr><td colspan="2"align="center"><input type="submit" name="save" value="Submit"></td></tr>
+	   </form>
+	 </table>
+    </div>
+	
+	<form method="post" action="nts_id.php" enctype="multipart/form-data">
+	  <tr><b><td style="position:relative;bottom:500px;top:500px;left:100px">Check your ID here</td><td><input type='number' name='check' placeholder="Enter valid ID number"></td></tr>
+	  <tr><td><input type='submit' name="checked" value='Submit'></td></tr><br>
+    
+	</form>
+	<br><br><br><a href="main.html"><input type="button" value="Go back">
+     
+	
+	</body>
+</html>
+	

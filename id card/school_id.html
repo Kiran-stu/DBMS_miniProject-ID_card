@@ -1,0 +1,33 @@
+<html>
+   <head>
+    <title>School ID | Generator</title>
+   </head>
+     <body bgcolor='grey' style='background-image:url("images/background.jpg");'>
+	  <div align="center">
+       <table>
+	    <form method="post" action="school.php" enctype="multipart/form-data">
+	    <h1 style='font-size:45;'>School ID card</h1>
+		<tr><td><b>Admission number</td><td><input type="number" name='adm_no' required></td></tr>
+		<tr><td><b>Name:</td><td><input type="text" name='name' required></td></tr>
+		<tr><td><b>Father name:</td><td><input type="text" name='father_name' required></td></tr>
+		<tr><td><b>DOB:</td><td><input type="date" name="dob"  required></td></tr>
+		<tr><td><b>Class:</td><td><input type="text" name="class" required></td></tr>
+		<tr><td><b>sec:</td><td>A<input type="radio" name="sec" value='A' required>B<input type="radio" name="sec" required value='B'></td></tr>
+		<tr><td><b>Rollno:</td><td><input type="number" name='rollno' required></td></tr>
+		<tr><td><b>Mobile:</td><td><input type="number" name='mobile' required></td></tr>
+		<tr><td><b>District:</td><td><input type="text" name='address' required></td></tr>
+		<tr><td colspan="2"align="center"><input type="submit" name="save" value="Submit"></td></tr>
+	   </form>
+	 </table>
+    </div>
+	
+	<form method="post" action="scl_id.php" enctype="multipart/form-data">
+	  <tr><b><td style="position:relative;bottom:500px;top:500px;left:100px">Check your ID here</td><td><input type='number' name='check' placeholder="Enter valid roll number"></td></tr>
+	  <tr><td><input type='submit' name="checked" value='Submit'></td></tr><br>
+     
+	</form>
+	<br><br><br><a href="main.html"><input type="button" value="Go back">
+	
+	</body>
+</html>
+	

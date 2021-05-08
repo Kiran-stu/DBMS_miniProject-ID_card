@@ -1,0 +1,46 @@
+<html>
+   <head>
+    <title>College ID | Generator</title>
+   </head>
+     <body style='background-image:url("images/background.jpg");'>
+	  <div align="center">
+       <table>
+	    <form method="post" action="college.php" enctype="multipart/form-data">
+	    <h1 style='font-size:45;'>College ID card</h1>
+		<tr><td><b>USN:</td><td><input type="text" name='usn' required></td></tr>
+		<tr><td><b>Name:</td><td><input type="text" name="name" placeholder='Enter your name' required></td></tr>
+		<tr><td><b>dob:</td><td><input type="date" name="dob" required></td></tr>
+		<tr><td><b>sem & sec:</td><td><input type="text" name="sem_sec" required></td></tr>
+		<tr>
+		<td><b>Department</td>
+		<td>
+		<select name="department" required>
+		<option value="CSE">CSE</option>
+		<option value="ISE">ISE</option>
+		<option value="ME">ME</option>
+		<option value="CIV">CIV</option>
+		<option value="EC">EC</option>
+		<option value="MCA">MCA</option>
+		<option value="M.TEC">M.TEC</option>
+		</select>
+		</td>
+		</tr>
+		<tr><td><b>mobile:</td><td><input type="number" name="mobile"></td></tr>
+		<tr><td><b>email:</td><td><input type="text" name="email"></td></tr>
+		<tr><td><b>Blood group:</td><td><input type="text" name="Blood group"></td></tr>
+		<tr><td><b>District:</td><td><input type="text" name="address" required></td></tr>
+		<tr><td colspan="2"align="center"><input type="submit" name="save" value="Submit"></td></tr>
+	   </form>
+	 </table>
+    </div>
+	
+	<form method="post" action="clg_id.php" enctype="multipart/form-data">
+	  <tr><b><td style="position:fixed;bottom:500px;top:500px;left:100px">Check your ID here</td><td><input type='number' name='check' placeholder="Enter your mobile number"></td></tr>
+	  <tr><td style='position:fixed;left:500px;'><input type='submit' name="checked" value='Submit'></td></tr><br>
+	 
+	</form>
+    <br><br><br><a href="main.html"><input type="button" value="Go back">
+
+	</body>
+</html>
+	
